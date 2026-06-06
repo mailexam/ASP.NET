@@ -1,6 +1,6 @@
 # ASP.NET Core + Mailexam
 
-Minimal [ASP.NET Core](https://dotnet.microsoft.com/apps/aspnet) example that sends test mail through [Mailexam](https://mailexam.ru/) SMTP via [MailKit](https://github.com/jstedfast/MailKit).
+Minimal [ASP.NET Core](https://dotnet.microsoft.com/apps/aspnet) example that sends test mail through [Mailexam](https://mailexam.io/) SMTP via [MailKit](https://github.com/jstedfast/MailKit).
 
 Based on the [Mailexam ASP.NET Core guide](https://wiki.mailexam.ru/en/examples/aspnet/).
 
@@ -15,7 +15,7 @@ From your Mailexam welcome email or dashboard:
 |----------|-------------|
 | `MAILEXAM_LOGIN` | SMTP login (for example, `xxxxx`) |
 | `MAILEXAM_PASSWORD` | SMTP password (paired with the login) |
-| Host | `{MAILEXAM_LOGIN}.mailexam.ru` (built in `Services/MailService.cs`) |
+| Host | `{MAILEXAM_LOGIN}.mailexam.io` (built in `Services/MailService.cs`) |
 
 ## Quick start (host)
 
@@ -127,13 +127,13 @@ variables:
   MAIL_FROM: "noreply@example.test"
 ```
 
-After sending a message in a test, verify delivery via the [Mailexam API](https://mailexam.ru/api).
+After sending a message in a test, verify delivery via the [Mailexam API](https://mailexam.io/api).
 
 ## Troubleshooting
 
 **TLS or authentication failed**
 
-- Host must be `{login}.mailexam.ru`, where `{login}` matches `MAILEXAM_LOGIN`.
+- Host must be `{login}.mailexam.io`, where `{login}` matches `MAILEXAM_LOGIN`.
 - Login and password must come from the same Mailexam project.
 
 **Port 587**
@@ -150,4 +150,4 @@ After sending a message in a test, verify delivery via the [Mailexam API](https:
 - [Mailexam ASP.NET Core guide (wiki)](https://wiki.mailexam.ru/en/examples/aspnet/)
 - [Spring Boot reference implementation](https://github.com/mailexam/Spring) — SMTP on JVM
 - [MailKit documentation](https://mimekit.net/docs/html/Introduction.htm)
-- [Mailexam API documentation](https://mailexam.ru/api)
+- [Mailexam API documentation](https://mailexam.io/api)

@@ -27,7 +27,7 @@ public class MailService
         message.Body = new TextPart("plain") { Text = body };
 
         using var client = new SmtpClient();
-        await client.ConnectAsync($"{login}.mailexam.ru", port, GetSecureSocketOptions(port), ct);
+        await client.ConnectAsync($"{login}.mailexam.io", port, GetSecureSocketOptions(port), ct);
         await client.AuthenticateAsync(login, password, ct);
         await client.SendAsync(message, ct);
         await client.DisconnectAsync(true, ct);
