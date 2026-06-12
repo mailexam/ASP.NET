@@ -151,3 +151,7 @@ After sending a message in a test, verify delivery via the [Mailexam API](https:
 - [Spring Boot reference implementation](https://github.com/mailexam/Spring-Boot) — SMTP on JVM
 - [MailKit documentation](https://mimekit.net/docs/html/Introduction.htm)
 - [Mailexam API documentation](https://mailexam.io/api)
+
+## License
+
+Apache 2.0
